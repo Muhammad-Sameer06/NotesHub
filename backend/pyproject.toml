@@ -1,0 +1,14 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["B008"]  # FastAPI uses Depends()/Query() in default arguments by design
+
+[tool.ruff.lint.isort]
+known-third-party = ["alembic"]  # our alembic/ folder has the same name as the package

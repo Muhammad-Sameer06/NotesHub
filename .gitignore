@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets / local config — never commit real .env files
+.env
+*.env
+!.env.example
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
